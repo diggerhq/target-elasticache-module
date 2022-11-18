@@ -39,7 +39,6 @@ resource "aws_elasticache_replication_group" "elasticache_replication_group" {
   description                = var.cluster_id
   node_type                  = var.redis_node_type
   num_cache_clusters         = var.redis_number_nodes
-  parameter_group_name       = "default.redis6.x"
   security_group_ids         = [aws_security_group.redis_sg.id]
   subnet_group_name          = aws_elasticache_subnet_group.elasticache_subnet_group.name
   tags                       = var.tags
