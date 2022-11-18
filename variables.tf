@@ -1,5 +1,3 @@
-variable "aws_app_identifier" {}
-
 variable "allocated_storage" {
   type        = number
   default     = 100
