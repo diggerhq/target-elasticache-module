@@ -1,10 +1,3 @@
-variable "allocated_storage" {
-  type        = number
-  default     = 100
-  description = "The default storage for the RDS instance"
-}
-
-
 variable "cluster_id" {
 }
 
@@ -22,7 +15,7 @@ variable "redis_port" {
 }
 
 variable "redis_number_nodes" {
-  default = 2
+  default = 1
 }
 
 variable "vpc_id" {}
